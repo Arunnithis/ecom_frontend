@@ -20,5 +20,12 @@ const sliderItems = [
         desc: "Most awaited Winter Sale is here fro you!!!",
         bg : "fbf0f4"
     },
+    {
+        id : 4,
+        img : "https://freepngimg.com/thumb/shopping/1-2-shopping-png-pic.png",
+        title :"FESTIVE SALE",
+        desc: "Most awaited Winter Sale is here fro you!!!",
+        bg : "fcf1ed"
+    }
 ]
 export default sliderItems
