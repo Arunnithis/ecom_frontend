@@ -36,9 +36,6 @@ const Option = styled.option``;
 const ProductList = () => {
   return (
     <Container>
-<<<<<<< HEAD
-      
-=======
       <Anouncement />
       <Navbar />
       <Title>Dresses</Title>
@@ -79,7 +76,6 @@ const ProductList = () => {
       <Products />
       <Newsletter />
       <Footer />
->>>>>>> origin/main
     </Container>
   )
 }
