@@ -36,6 +36,7 @@ const SocialIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  background-color : ${(props) => props.bg};
 `
 const Center = styled.div`
   flex: 1;
