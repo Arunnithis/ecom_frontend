@@ -3,6 +3,7 @@ import { styled } from 'styled-components'
 import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
 import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import sliderItems from "../data"
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     width:100%;
@@ -10,6 +11,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
+    ${mobile({ display : "none" })}
 `
 const Arrow = styled.div`
     width : 50px;
@@ -56,7 +58,7 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
     font-size:70px;
 `
-const Descriptioin = styled.p`
+const Description = styled.p`
     margin : 50px 0 ;
     font-weight: 500;
     letter-spacing : 3px;
@@ -89,7 +91,7 @@ const Slider = () => {
                 </ImgContainer>
                 <InfoContainer>
                     <Title>{item.title}</Title>
-                    <Descriptioin>{item.desc}</Descriptioin>
+                    <Description>{item.desc}</Description>
                     <Button>SHOP NOW</Button>
                 </InfoContainer>
                 </Slide>

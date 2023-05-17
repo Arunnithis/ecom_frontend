@@ -6,9 +6,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
+import { mobile } from '../responsive';
 
 const Container = styled.div`
     display: flex;
+    ${mobile({flexDirection : "column" })}
 `
 const Left = styled.div`
     flex: 1;
@@ -31,16 +33,16 @@ const SocialIcon = styled.div`
   height: 40px;
   border-radius: 50%;
   color: white;
-  background-color: #${(props) => props.color};
+  background-color: ${(props) => props.color};
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 20px;
-  background-color : ${(props) => props.bg};
 `
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({display : "none" })}
 `;
 
 const Title = styled.h3`
@@ -63,6 +65,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({backgroundColor : "lightgray" })}
 `;
 
 const ContactItem = styled.div`
@@ -83,13 +86,13 @@ const Footer = () => {
             An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
             </Desc>
             <SocialContainer>
-                <SocialIcon>
+                <SocialIcon color="blue">
                     <FacebookIcon />
                 </SocialIcon>
-                <SocialIcon>
+                <SocialIcon color ="red">
                     <InstagramIcon />
                 </SocialIcon>
-                <SocialIcon>
+                <SocialIcon color="blue">
                     <LinkedInIcon />
                 </SocialIcon>
             </SocialContainer>
