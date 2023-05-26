@@ -13,7 +13,7 @@ const Container = styled.div`
     overflow: hidden;
     ${mobile({ display : "none" })}
 `
-const Arrow = styled.div`
+const ArrowLeft = styled.div`
     width : 50px;
     height : 50px;
     border-radius: 50%;
@@ -24,8 +24,24 @@ const Arrow = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
-    left : ${props => props.direction === "left" && "10px"};
-    right : ${props => props.direction === "right" && "10px"};
+    left : 10px;
+    margin:auto;
+    cursor:pointer;
+    opacity : 0.5;
+    z-index: 2;
+`
+const ArrowRight = styled.div`
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7f7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right : 10px;
     margin:auto;
     cursor:pointer;
     opacity : 0.5;
@@ -80,9 +96,9 @@ const Slider = () => {
     }
   return (
     <Container>
-        <Arrow direction = "left" onClick={()=>handleClick("left")}>
+        <ArrowLeft direction = "left" onClick={()=>handleClick("left")}>
             <ArrowLeftOutlinedIcon />
-        </Arrow>
+        </ArrowLeft>
         <Wrapper sliderindex={slideIndex}>
             {sliderItems.map((item) => (
                 <Slide key={item.id} bg={item.bg}>
@@ -97,9 +113,9 @@ const Slider = () => {
                 </Slide>
             ))}
         </Wrapper>
-        <Arrow direction = "right" onClick={()=>handleClick("right")}>
+        <ArrowRight direction = "right" onClick={()=>handleClick("right")}>
             <ArrowRightOutlinedIcon />
-        </Arrow>
+        </ArrowRight>
     </Container>
   )
 }
