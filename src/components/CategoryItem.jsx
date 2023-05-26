@@ -32,10 +32,16 @@ flex-direction:column;
 const Button = styled.button`
     border:none;
     padding:10px;
-    background-color: white;
-    color:gray;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     cursor : pointer;
     font-weight: 600;
+    transition:all 0.5s ease;
+    &:hover{
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+    }
 `
 
 const CategoryItem = ({item}) => {

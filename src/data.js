@@ -44,34 +44,42 @@ const sliderItems = [
   export const popularProducts = [
     {
       id:1,
+      title : "Women Tshirts",
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
     },
     {
       id:2,
+      title :"Kids Tshirts",
       img:"https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1662130112_1367320.jpg?format=webp&w=700&dpr=1.0",
     },
     {
       id:3,
+      title : "Men's Shirts",
       img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
     },
     {
       id:4,
+      title : "Men'Shirts",
       img:"https://cdn.shopify.com/s/files/1/0623/8850/2700/products/WM0032_700x.png?v=1654782432",
     },
     {
       id:5,
+      title : "Eco Friendly bags",
       img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
     },
     {
       id:6,
+      title : "Boys caps",
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
     },
     {
       id:7,
+      title : "Bomber Jackets",
       img:"https://amerikaantje.be/wp-content/uploads/2021/06/2217-arrow-jacket-forest.jpg",
     },
     {
       id:8,
+      title : "Full Coats",
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]

@@ -84,6 +84,10 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor : pointer;
+    &:hover{
+        background-color: black;
+        color : white;
+    }
 `
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0)

@@ -27,10 +27,11 @@ const SearchContainer =styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    ${mobile({height :"15px"})}
 `
 const Input = styled.input`
     border: none;
-    ${mobile({width : "50px" })}
+    ${mobile({width : "60px",height :"15px", })}
 `
 const Left = styled.div`
     flex : 1;
@@ -40,12 +41,15 @@ const Left = styled.div`
 const Center = styled.div`
     flex : 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 const Logo = styled.h1`
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
-    ${mobile({fontSize : "24px" })}
+    ${mobile({fontSize : "24px",marginLeft: "42px" })}
 
 `
 const Right = styled.div`
@@ -70,7 +74,7 @@ const Navbar = () => {
                 <Language>EN</Language>
                 <SearchContainer>
                     <Input placeholder="Search" />
-                    <SearchOutlinedIcon style={{color : "gray", fontsize : 12}} />
+                    <SearchOutlinedIcon style={{color : "gray", fontSize : 18}} />
                 </SearchContainer>
             </Left>
             <Center>
@@ -80,7 +84,7 @@ const Navbar = () => {
                 <MenuItem>Register</MenuItem>
                 <MenuItem>Login</MenuItem>
                 <MenuItem>
-                    <Badge badgeContent={4} color="primary">
+                    <Badge badgeContent={1} color="primary">
                         <ShoppingCartOutlinedIcon color="action" />
                     </Badge>
                 </MenuItem>

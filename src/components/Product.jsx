@@ -12,11 +12,12 @@ const Info =styled.div`
     top:0;
     left:0;
     z-index: 3;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     transition:all 0.5s ease;
+    flex-direction:column;
 `
 const Icon =styled.div`
     height: 40px;
@@ -63,6 +64,18 @@ const Image =styled.img`
     height: 75%;
     z-index:2;  
 `
+const Title = styled.h1`
+    color : white;
+    text-shadow: 10px;
+`
+const Icons = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+const Descr = styled.div`
+    
+`
 
 const Product = ({prod}) => {
   return (
@@ -70,15 +83,22 @@ const Product = ({prod}) => {
         <Circle />
         <Image src={prod.img} />
         <Info>
-            <Icon>
-                <ShoppingCartOutlinedIcon />
-            </Icon>
-            <Icon>
-                <SearchOutlinedIcon />
-            </Icon>
-            <Icon>
-                <FavoriteBorderOutlinedIcon />
-            </Icon>
+            <Icons>
+                <Icon>
+                    <ShoppingCartOutlinedIcon />
+                </Icon>
+                <Icon>
+                    <SearchOutlinedIcon />
+                </Icon>
+                <Icon>
+                    <FavoriteBorderOutlinedIcon />
+                </Icon>
+            </Icons>
+            <Descr>
+                <Title>
+                    {prod.title}
+                </Title>
+            </Descr>
         </Info>
     </Container>
   )
