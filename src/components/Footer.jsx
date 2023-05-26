@@ -86,13 +86,13 @@ const Footer = () => {
             An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
             </Desc>
             <SocialContainer>
-                <SocialIcon color="blue">
+                <SocialIcon color="#3b5998">
                     <FacebookIcon />
                 </SocialIcon>
-                <SocialIcon color ="red">
+                <SocialIcon color =" #f09433">
                     <InstagramIcon />
                 </SocialIcon>
-                <SocialIcon color="blue">
+                <SocialIcon color="#0e76a8">
                     <LinkedInIcon />
                 </SocialIcon>
             </SocialContainer>
